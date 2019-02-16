@@ -19,7 +19,7 @@ COMMENT ON SCHEMA public IS 'Standard public schema';
 -- Name: plpgsql; Type: PROCEDURAL LANGUAGE; Schema: -; Owner: pgsql
 --
 
-CREATE PROCEDURAL LANGUAGE plpgsql;
+-- CREATE PROCEDURAL LANGUAGE plpgsql;
 
 
 SET search_path = public, pg_catalog;
@@ -6646,9 +6646,9 @@ ALTER TABLE ONLY itemtype
 -- Name: public; Type: ACL; Schema: -; Owner: pgsql
 --
 
-REVOKE ALL ON SCHEMA public FROM PUBLIC;
-REVOKE ALL ON SCHEMA public FROM pgsql;
-GRANT ALL ON SCHEMA public TO pgsql;
+ REVOKE ALL ON SCHEMA public FROM PUBLIC;
+-- REVOKE ALL ON SCHEMA public FROM pgsql;
+-- GRANT ALL ON SCHEMA public TO pgsql;
 GRANT ALL ON SCHEMA public TO PUBLIC;
 
 
